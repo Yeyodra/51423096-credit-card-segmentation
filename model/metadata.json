@@ -1,0 +1,59 @@
+{
+  "dataset": "Credit Card Dataset for Clustering (Kaggle - arjunbhasin2013/ccdata)",
+  "sumber": "https://www.kaggle.com/datasets/arjunbhasin2013/ccdata",
+  "fitur": [
+    "BALANCE",
+    "PURCHASES",
+    "CREDIT_LIMIT"
+  ],
+  "jumlah_cluster": 2,
+  "jumlah_data": 8949,
+  "silhouette_score": 0.549,
+  "davies_bouldin_index": 1.0596,
+  "centroid_scaled": [
+    [
+      1.349,
+      0.6485,
+      1.435
+    ],
+    [
+      -0.3444,
+      -0.1656,
+      -0.3663
+    ]
+  ],
+  "centroid_asli": [
+    [
+      4372.49,
+      2388.89,
+      9715.69
+    ],
+    [
+      847.82,
+      649.59,
+      3161.49
+    ]
+  ],
+  "profil_cluster": {
+    "0": {
+      "Jumlah Nasabah": 1816,
+      "BALANCE": 4378.57,
+      "PURCHASES": 2392.42,
+      "CREDIT_LIMIT": 9718.09,
+      "CASH_ADVANCE": 2457.22,
+      "PURCHASES_TRX": 28.58,
+      "PAYMENTS": 3907.35,
+      "TENURE": 11.74
+    },
+    "1": {
+      "Jumlah Nasabah": 7133,
+      "BALANCE": 848.25,
+      "PURCHASES": 649.66,
+      "CREDIT_LIMIT": 3164.56,
+      "CASH_ADVANCE": 602.61,
+      "PURCHASES_TRX": 11.18,
+      "PAYMENTS": 1179.85,
+      "TENURE": 11.46
+    }
+  }
+}

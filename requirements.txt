@@ -1,0 +1,18 @@
+# Requirements — Segmentasi Nasabah Kartu Kredit (K-Means Clustering)
+# Tugas Mandiri Pertemuan 4 - Deployment Model
+# NPM: 51423096 | Nazril Bintang Pratama | Kelas F
+#
+# Cara install:
+#     pip install -r requirements.txt
+#
+# Versi ditulis dengan batas minimum agar tetap kompatibel
+# dengan Streamlit Community Cloud (Python 3.11/3.12).
+
+streamlit>=1.32
+scikit-learn>=1.3
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+seaborn>=0.13
+joblib>=1.3
+scipy>=1.10
