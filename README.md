@@ -6,9 +6,14 @@
 Segmentasi nasabah kartu kredit menggunakan **K-Means Clustering** (metodologi CRISP-DM),
 di-deploy sebagai aplikasi **Streamlit** interaktif.
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io)
+## 🔗 Link
 
-## 📁 Isi Repo
+| | |
+|---|---|
+| **Aplikasi (Live)** | **https://tugas.novela.biz.id** |
+| **Source Code** | https://github.com/Yeyodra/51423096-credit-card-segmentation |
+
+## 📁 Isi Folder
 
 | Berkas | Keterangan |
 |---|---|
@@ -17,6 +22,7 @@ di-deploy sebagai aplikasi **Streamlit** interaktif.
 | `credit_card_clustered.csv` | Dataset hasil clustering (dengan kolom `Cluster`) |
 | `app.py` | Source code aplikasi Streamlit |
 | `requirements.txt` | Dependensi Python |
+| `Dockerfile` | Konfigurasi container (opsional, untuk deployment) |
 | `model/kmeans_model.pkl` | Model K-Means terlatih |
 | `model/scaler.pkl` | StandardScaler (wajib dipakai untuk input baru) |
 | `model/metadata.json` | Metadata model (fitur, jumlah cluster, metrik evaluasi) |
@@ -35,11 +41,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## ☁️ Deploy ke Streamlit Community Cloud
-
-1. Buka <https://share.streamlit.io> dan login dengan GitHub.
-2. Klik **New app** → pilih repo ini, branch `main`, file `app.py`.
-3. Klik **Deploy**. Selesai — dapatkan link publik aplikasi.
+Buka `http://localhost:8501`.
 
 ## 📈 Hasil Model
 
@@ -48,3 +50,12 @@ streamlit run app.py
 | Jumlah cluster (k) | 2 |
 | Silhouette Score | 0.549 |
 | Davies-Bouldin Index | 1.0596 |
+
+## 🧭 Metodologi (CRISP-DM)
+
+1. **Business Understanding** — segmentasi nasabah untuk strategi pemasaran
+2. **Data Understanding** — eksplorasi struktur, kualitas, dan karakteristik data
+3. **Data Preparation** — penanganan *missing value*, pemilihan fitur, standarisasi
+4. **Modeling** — K-Means, Elbow Method, Silhouette Score, visualisasi PCA
+5. **Evaluation** — Silhouette Score, Davies-Bouldin Index, interpretasi profil cluster
+6. **Deployment** — aplikasi Streamlit (lihat `app.py`)
